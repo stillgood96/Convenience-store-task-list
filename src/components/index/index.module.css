@@ -1,0 +1,26 @@
+.container {
+  width: 30em;
+  height: 15em;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.choice {
+  width: 6rem;
+}
+
+.button {
+  width: 6rem;
+  margin-top: 1em;
+  cursor: pointer;
+}
