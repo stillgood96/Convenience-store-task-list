@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  background-color: #385461;
+}
+.title {
+  text-align: center;
+  color: white;
+}
+span {
+  color: #c22311;
+}

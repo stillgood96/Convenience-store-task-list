@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./app";
 import reportWebVitals from "./reportWebVitals";
 import "@fortawesome/fontawesome-free/js/all.js";
+import taskList from "./service/task_repository";
+
+const taskLists = new taskList();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App taskLists={taskLists} />
   </React.StrictMode>,
   document.getElementById("root")
 );
