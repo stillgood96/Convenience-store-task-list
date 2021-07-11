@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import taskList from "../../service/task_repository";
 import Card from "../card/card";
 import Footer from "../footer/footer";
 import Header from "../header/header";
@@ -14,7 +13,7 @@ const Task = ({ taskLists }) => {
 
   switch (title) {
     case "weekend-night":
-      changingTitle = "주말야간 근무 사항";
+      changingTitle = "주말야간 업무 사항";
       break;
   }
 

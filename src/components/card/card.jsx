@@ -6,9 +6,9 @@ const Card = ({ item }) => {
 
   return (
     <div className={styles.container}>
-      <img src="" alt={imgURL} />
-      <h3>{name}jkkj</h3>
-      <p>{description}jkkjh</p>
+      <h3>{name}</h3>
+      <img className={styles.photo} src={imgURL} alt="" />
+      <p>{description}</p>
     </div>
   );
 };

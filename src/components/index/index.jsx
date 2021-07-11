@@ -4,6 +4,11 @@ import styles from "./index.module.css";
 
 const Index = (props) => {
   const choiceRef = useRef();
+  const firstRef = useRef();
+  const secondRef = useRef();
+  const idRef = useRef();
+  const pwdRef = useRef();
+
   const history = useHistory();
 
   const goToTask = () => {
@@ -12,6 +17,12 @@ const Index = (props) => {
       state: { value: choiceRef.current.value },
     });
     console.log(choiceRef.current.value);
+  };
+
+  const goToLogin = () => {
+    history.push({
+      pathname: "/login",
+    });
   };
 
   return (
@@ -31,7 +42,9 @@ const Index = (props) => {
       <button className={styles.button} onClick={goToTask}>
         업무보기
       </button>
-      <button className={styles.button}>관리자 로그인</button>
+      <button className={styles.button} onClick={goToLogin}>
+        관리자 로그인
+      </button>
     </section>
   );
 };

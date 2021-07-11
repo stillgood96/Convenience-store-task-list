@@ -14,11 +14,20 @@
   align-items: center;
   flex: 1;
   min-height: 0;
+  overflow-y: scroll;
+  z-index: 4;
+}
 
-  margin-top: 3rem;
-
-  position: relative;
-  background-image: url("https://res.cloudinary.com/imlsw96/image/upload/v1625668257/CU_logo_gnfmzk.png");
+.container::after {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  content: " ";
+  background: url("https://res.cloudinary.com/imlsw96/image/upload/v1625668257/CU_logo_gnfmzk.png");
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

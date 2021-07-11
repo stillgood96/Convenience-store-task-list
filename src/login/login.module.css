@@ -15,24 +15,11 @@
   width: 3rem;
 }
 
-.choice {
-  width: 6rem;
-}
-
-.button {
-  width: 6rem;
-  margin-top: 1em;
-  cursor: pointer;
-}
-
-.first {
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.second {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+input {
+  margin-bottom: 10px;
 }
